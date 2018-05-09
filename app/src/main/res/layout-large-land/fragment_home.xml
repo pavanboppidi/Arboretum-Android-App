@@ -1,0 +1,259 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/tanbackgroundlandscape"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="nwmissouri.edu.missouriarboretum.Home">
+
+
+        <ImageButton
+            android:id="@+id/treeInformationIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/tree_information"
+            android:layout_above="@+id/textView5"
+            android:layout_toRightOf="@+id/trailsIBTN"
+            android:layout_toEndOf="@+id/trailsIBTN"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp" />
+
+        <ImageButton
+            android:id="@+id/trailsIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/trails"
+            android:layout_above="@+id/textView5"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/treeinformationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/adoptatreeTV"
+            android:fontFamily="sans-serif"
+            android:text="\t "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/adoptatreeIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/adoptatreehomescreen"
+            android:layout_below="@+id/arboretumLogoIV"
+            android:layout_alignLeft="@+id/adoptatreeTV"
+            android:layout_alignStart="@+id/adoptatreeTV" />
+
+        <TextView
+            android:id="@+id/adoptatreeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text=" Adopt a tree"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/adoptatreeIBTN"
+            android:layout_alignLeft="@+id/facebookIBTN"
+            android:layout_alignStart="@+id/facebookIBTN" />
+
+        <ImageButton
+            android:id="@+id/informationIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/information"
+            android:layout_above="@+id/textView"
+            android:layout_alignLeft="@+id/textView5"
+            android:layout_alignStart="@+id/textView5" />
+
+        <TextView
+            android:id="@+id/informationTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/treeviaTV"
+            android:fontFamily="sans-serif"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/treeviaIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/treevia"
+            android:layout_alignTop="@+id/adoptatreeIBTN"
+            android:layout_alignRight="@+id/arboretumLogoIV"
+            android:layout_alignEnd="@+id/arboretumLogoIV"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp" />
+
+        <TextView
+            android:id="@+id/treeviaTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/treeviaIBTN"
+            android:fontFamily="sans-serif"
+            android:text=" "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/photoIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/photos"
+            android:layout_above="@+id/northwestWebsiteTV"
+            android:layout_alignRight="@+id/treeInformationIBTN"
+            android:layout_alignEnd="@+id/treeInformationIBTN" />
+
+        <TextView
+            android:id="@+id/photoTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+
+            android:layout_toLeftOf="@+id/adoptatreeTV"
+            android:layout_below="@+id/photoIBTN" />
+
+        <ImageButton
+            android:id="@+id/northwestWebsiteIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/logo1"
+            android:layout_below="@+id/treeinformationTV"
+            android:layout_alignRight="@+id/treeviaIBTN"
+            android:layout_alignEnd="@+id/treeviaIBTN" />
+
+        <TextView
+            android:id="@+id/northwestWebsiteTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="\tNorthwest\n\t  website"
+            android:textStyle="bold"
+            android:layout_below="@+id/northwestWebsiteIBTN"
+            android:layout_alignLeft="@+id/treeviaIBTN"
+            android:layout_alignStart="@+id/treeviaIBTN" />
+
+        <ImageButton
+            android:id="@+id/facebookIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/facebook"
+            android:layout_marginRight="58dp"
+            android:layout_marginEnd="58dp"
+            android:layout_below="@+id/adoptatreeTV"
+            android:layout_toLeftOf="@+id/northwestWebsiteIBTN"
+            android:layout_toStartOf="@+id/northwestWebsiteIBTN" />
+
+        <TextView
+            android:id="@+id/facebookTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="\tFacebook"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/facebookIBTN"
+            android:layout_toRightOf="@+id/photoTV"
+            android:layout_toEndOf="@+id/photoTV" />
+
+        <ImageView
+            android:id="@+id/arboretumLogoIV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/missouriarboretumlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" \t Photo"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:layout_alignRight="@+id/photoIBTN"
+            android:layout_alignEnd="@+id/photoIBTN"
+            android:layout_below="@+id/photoIBTN"
+            android:layout_alignLeft="@+id/photoIBTN"
+            android:layout_alignStart="@+id/photoIBTN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\tTreevia"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:id="@+id/textView2"
+            android:layout_alignRight="@+id/northwestWebsiteTV"
+            android:layout_alignEnd="@+id/northwestWebsiteTV"
+            android:layout_below="@+id/treeviaIBTN"
+            android:layout_alignLeft="@+id/treeviaIBTN"
+            android:layout_alignStart="@+id/treeviaIBTN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\tTree \n  information"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/informationIBTN"
+            android:layout_alignLeft="@+id/informationIBTN"
+            android:layout_alignStart="@+id/informationIBTN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Information"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/treeInformationIBTN"
+            android:layout_alignLeft="@+id/treeInformationIBTN"
+            android:layout_alignStart="@+id/treeInformationIBTN" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="      Trails"
+            android:fontFamily="sans-serif"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:id="@+id/textView5"
+            android:layout_above="@+id/facebookIBTN"
+            android:layout_alignLeft="@+id/arboretumLogoIV"
+            android:layout_alignStart="@+id/arboretumLogoIV"
+             />
+
+    </RelativeLayout>
+</ScrollView>

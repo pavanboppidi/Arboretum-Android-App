@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanbackgroundlandscape"
+    android:paddingLeft="5dp"
+    tools:context="nwmissouri.edu.missouriarboretum.Information">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/informationTV"
+        android:textSize="35sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/websiteUrlTV"
+        android:autoLink="web"
+        android:layout_below="@+id/informationTV"
+        android:layout_alignStart="@+id/informationTV"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/phoneNumberTV"
+        android:autoLink="phone"
+        android:layout_below="@+id/websiteUrlTV"
+        android:layout_alignStart="@+id/websiteUrlTV"
+        android:textSize="35sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:autoLink="email"
+        android:id="@+id/emailTV"
+        android:layout_below="@+id/phoneNumberTV"
+        android:layout_alignStart="@+id/phoneNumberTV"
+        android:textSize="35sp"/>
+
+</RelativeLayout>

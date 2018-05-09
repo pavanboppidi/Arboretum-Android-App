@@ -1,0 +1,85 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="542dp"
+        android:background="@drawable/tanbackgroundlandscape"
+        tools:context="nwmissouri.edu.missouriarboretum.Treevia">
+
+        <TextView
+            android:id="@+id/questionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/answerIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/answer"
+            android:layout_marginRight="151dp"
+            android:layout_marginEnd="151dp"
+            android:layout_above="@+id/TreeviaanswerTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageButton
+            android:id="@+id/moreTreeviaIBTN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_corner"
+            android:src="@drawable/treevia"
+            android:layout_marginTop="47dp"
+            android:layout_below="@+id/questionTV"
+            android:layout_alignLeft="@+id/moreTreeviaQuestionTV"
+            android:layout_alignStart="@+id/moreTreeviaQuestionTV" />
+
+        <TextView
+            android:id="@+id/TreeviaanswerTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer         "
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_below="@+id/moreTreeviaIBTN"
+            android:layout_alignRight="@+id/answerIBTN"
+            android:layout_alignEnd="@+id/answerIBTN" />
+
+        <TextView
+            android:id="@+id/moreTreeviaQuestionTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Question"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textStyle="bold"
+            android:layout_marginLeft="73dp"
+            android:layout_marginStart="73dp"
+            android:layout_below="@+id/moreTreeviaIBTN"
+            android:layout_toRightOf="@+id/questionTV"
+            android:layout_toEndOf="@+id/questionTV" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/answerTV"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/questionTV"
+            android:layout_alignStart="@+id/questionTV"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</ScrollView>

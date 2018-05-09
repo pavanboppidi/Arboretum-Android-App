@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanbackground"
+    tools:context="nwmissouri.edu.missouriarboretum.SupportTheArboretum">
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/how_to_adopt_a_tree"
+        android:id="@+id/howToAdoptATreeIBTN"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"
+        android:layout_alignTop="@+id/donationsIBTN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/howToAdoptATreeTV"
+        android:text=" How to adopt\n       a tree"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignBaseline="@+id/donationsTV"
+        android:layout_alignBottom="@+id/donationsTV"
+        android:layout_alignLeft="@+id/howToAdoptATreeIBTN"
+        android:layout_alignStart="@+id/howToAdoptATreeIBTN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/donations"
+        android:id="@+id/donationsIBTN"
+        android:layout_marginLeft="59dp"
+        android:layout_marginStart="59dp"
+        android:layout_above="@+id/howToAdoptATreeTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/donationsTV"
+        android:text="    Donations"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/donationsIBTN"
+        android:layout_alignStart="@+id/donationsIBTN"
+        android:layout_marginTop="191dp" />
+
+</RelativeLayout>

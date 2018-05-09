@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanbackground"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="nwmissouri.edu.missouriarboretum.Home">
+
+    <ImageButton
+        android:id="@+id/treeInformationIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/tree_information"
+        android:layout_above="@+id/trailsTV"
+        android:layout_alignRight="@+id/arboretumLogoIV"
+        android:layout_alignEnd="@+id/arboretumLogoIV" />
+
+    <ImageButton
+        android:id="@+id/trailsIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/trails"
+        android:layout_marginTop="88dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/arboretumLogoIV"
+        android:layout_alignStart="@+id/arboretumLogoIV" />
+
+    <TextView
+        android:id="@+id/trailsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="  Trails"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/trailsIBTN"
+        android:layout_alignRight="@+id/treeviaTV"
+        android:layout_alignEnd="@+id/treeviaTV" />
+
+    <TextView
+        android:id="@+id/treeinformationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="      Tree\n information"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/trailsTV"
+        android:layout_alignRight="@+id/photoIBTN"
+        android:layout_alignEnd="@+id/photoIBTN" />
+
+    <ImageButton
+        android:id="@+id/adoptatreeIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/adoptatreehomescreen"
+        android:layout_above="@+id/treeinformationTV"
+        android:layout_alignLeft="@+id/informationIBTN"
+        android:layout_alignStart="@+id/informationIBTN" />
+
+    <TextView
+        android:id="@+id/adoptatreeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Adopt a tree"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/trailsTV"
+        android:layout_alignLeft="@+id/adoptatreeIBTN"
+        android:layout_alignStart="@+id/adoptatreeIBTN" />
+
+    <ImageButton
+        android:id="@+id/informationIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/information"
+        android:layout_alignTop="@+id/photoIBTN"
+        android:layout_alignLeft="@+id/northwestWebsiteIBTN"
+        android:layout_alignStart="@+id/northwestWebsiteIBTN" />
+
+    <TextView
+        android:id="@+id/informationTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/photoTV"
+        android:layout_alignRight="@+id/northwestWebsiteIBTN"
+        android:layout_alignEnd="@+id/northwestWebsiteIBTN" />
+
+    <ImageButton
+        android:id="@+id/treeviaIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/treevia"
+        android:layout_alignTop="@+id/informationIBTN"
+        android:layout_alignRight="@+id/trailsIBTN"
+        android:layout_alignEnd="@+id/trailsIBTN" />
+
+    <TextView
+        android:id="@+id/treeviaTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t Treevia"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/informationTV"
+        android:layout_alignRight="@+id/facebookTV"
+        android:layout_alignEnd="@+id/facebookTV" />
+
+    <ImageButton
+        android:id="@+id/photoIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/photos"
+        android:layout_below="@+id/treeinformationTV"
+        android:layout_alignRight="@+id/arboretumLogoIV"
+        android:layout_alignEnd="@+id/arboretumLogoIV" />
+
+    <TextView
+        android:id="@+id/photoTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\t\tPhoto"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/informationIBTN"
+        android:layout_alignLeft="@+id/photoIBTN"
+        android:layout_alignStart="@+id/photoIBTN" />
+
+    <ImageButton
+        android:id="@+id/northwestWebsiteIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/facebookIBTN"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/logo1"
+        android:layout_alignTop="@+id/facebookIBTN" />
+
+    <TextView
+        android:id="@+id/northwestWebsiteTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/facebookTV"
+        android:layout_centerHorizontal="true"
+        android:text=" Northwest\n   website"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/facebookIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/facebook"
+        android:layout_below="@+id/treeviaTV"
+        android:layout_alignLeft="@+id/treeviaIBTN"
+        android:layout_alignStart="@+id/treeviaIBTN"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/facebookTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="   Facebook"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/facebookIBTN"
+        android:layout_alignLeft="@+id/facebookIBTN"
+        android:layout_alignStart="@+id/facebookIBTN" />
+
+    <ImageView
+        android:id="@+id/arboretumLogoIV"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_above="@+id/treeInformationIBTN"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/missouriarboretumlogo" />
+</RelativeLayout>

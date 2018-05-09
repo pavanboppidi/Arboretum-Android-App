@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nwmissouri.edu.missouriarboretum.Adoptatree">
+
+    <ImageButton
+        android:id="@+id/donorsIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="101dp"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/donors"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/commemorativeTreesIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/commemorative"
+        android:layout_alignTop="@+id/donorsIBTN"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="76dp"
+        android:layout_marginStart="76dp" />
+
+    <ImageButton
+        android:id="@+id/supportTheArboretumIBTN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner"
+        android:src="@drawable/supportthearboretum"
+        android:layout_alignTop="@+id/donorsIBTN"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="98dp"
+        android:layout_marginEnd="98dp" />
+
+    <TextView
+        android:id="@+id/commemorativeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Commemorative\n trees"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/commemorativeTreesIBTN"
+        android:layout_alignLeft="@+id/commemorativeTreesIBTN"
+        android:layout_alignStart="@+id/commemorativeTreesIBTN" />
+
+
+    <TextView
+        android:id="@+id/donorsTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/donorsIBTN"
+        android:layout_centerHorizontal="true"
+        android:text="  Donors"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/supportTheArboretumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Support the\n\tArboretum  "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/supportTheArboretumIBTN"
+        android:layout_alignLeft="@+id/supportTheArboretumIBTN"
+        android:layout_alignStart="@+id/supportTheArboretumIBTN" />
+
+</RelativeLayout>

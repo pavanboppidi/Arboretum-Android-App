@@ -1,0 +1,107 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tanbackgroundlandscape"
+    android:fillViewport="false">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="nwmissouri.edu.missouriarboretum.Trails">
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/chatauquatrails"
+        android:id="@+id/chatauquaTrailIBTN"
+        android:layout_above="@+id/towerTrailTV"
+        android:layout_toRightOf="@+id/shrubWalkIBTN"
+        android:layout_toEndOf="@+id/shrubWalkIBTN"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/chatauquaTrailTV"
+        android:text="\tChatauqua   \n\t\t\ttrail"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/chatauquaTrailIBTN"
+        android:layout_alignLeft="@+id/chatauquaTrailIBTN"
+        android:layout_alignStart="@+id/chatauquaTrailIBTN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/gaunttrail"
+        android:id="@+id/gauntTrailIBTN"
+        android:layout_marginLeft="43dp"
+        android:layout_above="@+id/shrubWalkTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/gauntTrailTV"
+        android:text="\t\tGaunt trail"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textStyle="bold"
+        android:layout_below="@+id/gauntTrailIBTN"
+        android:layout_alignLeft="@+id/gauntTrailIBTN"
+        android:layout_alignStart="@+id/gauntTrailIBTN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/towertrail"
+        android:id="@+id/towerTrailIBTN"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_alignParentEnd="true"
+         />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/towerTrailTV"
+        android:text="\t  Tower trail"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/towerTrailIBTN"
+        android:layout_alignLeft="@+id/towerTrailIBTN"
+        android:layout_alignStart="@+id/towerTrailIBTN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/shrubwalk"
+        android:id="@+id/shrubWalkIBTN"
+        android:layout_above="@+id/chatauquaTrailTV"
+        android:layout_toRightOf="@+id/gauntTrailIBTN"
+        android:layout_toEndOf="@+id/gauntTrailIBTN"
+        android:layout_marginLeft="77dp"
+        android:layout_marginStart="77dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/shrubWalkTV"
+        android:text="\t\tShrub walk"
+        android:textStyle="bold"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/chatauquaTrailTV"
+        android:layout_alignLeft="@+id/shrubWalkIBTN"
+        android:layout_alignStart="@+id/shrubWalkIBTN" />
+
+
+</RelativeLayout>
+</ScrollView>

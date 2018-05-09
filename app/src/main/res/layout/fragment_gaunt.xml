@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mapLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/mapperific"
+
+        android:name="com.google.android.gms.maps.MapFragment">
+
+
+    </fragment>
+    <ImageButton
+        android:id="@+id/navigbutton"
+        android:src="@drawable/large"
+        android:layout_height="50dp"
+        android:layout_width="50dp"
+        android:padding="10dp"
+        android:layout_gravity="bottom|left"
+        android:onClick="disableBearing"
+        android:scaleType="fitXY"
+        android:nestedScrollingEnabled="true" />
+
+</FrameLayout>

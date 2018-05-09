@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tanbackgroundlandscape"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        android:gravity="top" />
+
+        <ViewFlipper
+            android:id="@+id/flipper1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:autoStart="true"
+            android:flipInterval="7000"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            ></ViewFlipper>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="542dp">
+
+            <TextView
+                android:id="@+id/cNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/sNameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cNameTV"
+                android:layout_marginEnd="15dp"
+                android:textStyle="italic"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/descTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/sNameTV"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:text="Description:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/treedescriptionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/descTV"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/walknameTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_below="@+id/treedescriptionTV"
+                android:layout_alignStart="@+id/treedescriptionTV"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/treetrailID_TV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/walknameTV"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+            <SeekBar
+                android:id="@+id/progress_bar"
+                android:layout_width="match_parent"
+                android:paddingRight="25dp"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/mediaTime"
+                android:layout_alignEnd="@+id/mediaTime" />
+            <TextView android:layout_width="319dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/mediaTime"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/progress_bar" />
+
+            <ImageButton
+                android:layout_width="54dp"
+                android:layout_height="45dp"
+                android:id="@+id/playButton"
+                android:src="@drawable/play"
+                android:layout_weight="0.23"
+                android:layout_gravity="center_horizontal"
+                android:layout_alignBottom="@+id/mediaTime"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="123dp"
+                android:layout_marginEnd="123dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:weightSum="3">
+
+    <TextView
+        android:id="@+id/TreecommonNameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:ems="15"
+        android:paddingRight="5dp"
+        android:text="American Sweetgum"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/TreetrailnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+
+        android:ems="10"
+        android:text="trail Name"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+
+        />
+
+    <TextView
+        android:id="@+id/TreetrailIdTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="right"
+
+        android:text="trail Id"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+</LinearLayout>

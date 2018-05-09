@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nwmissouri.edu.missouriarboretum.Trails">
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_alignTop="@+id/gauntTrailIBTN"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/chatauquatrails"
+        android:id="@+id/chatauquaTrailIBTN" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/chatauquaTrailTV"
+        android:text="   Chatauqua \n  \t\t\t\ttrail"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_alignTop="@+id/gauntTrailTV"
+         />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/gaunttrail"
+        android:id="@+id/gauntTrailIBTN"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/gauntTrailTV"
+        android:text="Gaunt trail"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gauntTrailIBTN" />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/towertrail"
+        android:id="@+id/towerTrailIBTN"
+        android:layout_below="@+id/chatauquaTrailTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/towerTrailTV"
+        android:text="   Tower trail"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/towerTrailIBTN"
+        />
+
+    <ImageButton
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/rounded_corner_white"
+        android:src="@drawable/shrubwalk"
+        android:id="@+id/shrubWalkIBTN"
+        android:layout_above="@+id/chatauquaTrailTV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/shrubWalkTV"
+        android:text="   Shrub walk"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_below="@+id/chatauquaTrailIBTN"
+        android:layout_alignLeft="@+id/chatauquaTrailIBTN"
+        android:layout_alignStart="@+id/chatauquaTrailIBTN" />
+
+
+</RelativeLayout>
